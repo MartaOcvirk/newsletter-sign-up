@@ -1,0 +1,210 @@
+html {
+    height: 100%;
+}
+
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    color: hsl(234, 29%, 20%);
+}
+
+
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 5px;
+    display: inline-block;
+    
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    width: 90%;
+    border-radius: 15px;
+    height: 500px;
+}
+
+.container {
+    margin: 15px;
+    margin-left: 0px;
+    
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.column-text {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 20px;
+    margin-left: 40px;
+   
+   
+}
+
+.column img {
+    height: 100%;
+    width: 100%;
+}
+
+label, input, button {
+    display: block;
+}
+
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.container li {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    margin-right: 15px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+input {
+    margin: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
+    color: hsl(231, 7%, 60%);
+    width: 97%;
+    border-color: hsl(231, 7%, 60%);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-width: thin;
+    cursor: pointer;
+    outline: none;
+}
+
+
+input:active {
+    color:hsl(234, 29%, 20%);
+    border-color: hsl(234, 29%, 20%);
+}
+
+
+
+button {
+    margin: 15px;
+    margin-left: 0px;
+    width: 97%;
+    padding: 0px;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:active {
+    background-image: linear-gradient(to right, rgb(250, 80, 137), tomato);
+    box-shadow: 0 6px 30px -5px tomato;
+    border: none;
+}
+
+form {
+    margin: 20px;
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+.error {
+    border-color: tomato;
+}
+
+.error-message {
+	color: tomato;
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.card-2 {
+    background-color: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.card-2 h1 {
+    font-size: 40px;
+}
+
+.icon-card-2 {
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    .card{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .column img {
+        content: url(/illustration-sign-up-mobile.svg);
+        height: fit-content;
+    }
+
+    .column {
+        padding: 0;
+        height: 300px;
+    }
+
+    .card-2 {
+        height: 100vh;
+        width: 90%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+}

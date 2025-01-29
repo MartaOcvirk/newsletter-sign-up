@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <title>Newsletter Sign Up</title>
+    </head>
+
+    <body>
+
+        <header></header>
+
+        <main>
+            <div class="card">
+                
+                    <div class="column-text">
+
+                        <h1>Stay updated!</h1>
+                        <p>Join 60, 000+ product managers receiving monthly
+                            updates on:
+                        </p>
+
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <span class="icon-container">
+                                        <img class="icon-list" src="icon-list.svg" alt="">
+                                    </span>
+                                    <p>Product discovery and building what matters</p>
+                                </li>
+                                <li>
+                                    <span class="icon-container">
+                                        <img class="icon-list" src="icon-list.svg" alt="">
+                                    </span>
+                                    <p>Measuring to ensure updates are a success</p>
+                                </li>
+                                <li>
+                                    <span class="icon-container">
+                                        <img class="icon-list" src="icon-list.svg" alt="">
+                                    </span>
+                                    <p>And much more!</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form id="subscribeForm">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="email@company.com" />
+                            <button type="submit">Subscribe to monthly newsletter</button>
+                        </form>
+
+                    </div>
+                    <div class="column">
+                        <img src="illustration-sign-up-desktop.svg" alt="slika s prikazom tableta i otvorenih aplikacija na početnom zaslonu">
+                    </div>
+                
+                </div>
+
+            
+                <div class="card-2 hide">
+                    <img src="icon-success.svg" class="icon-card-2" alt="">
+                    <h1>Thanks for subscribing!</h1>
+                    <p>A confirmation email has been sent to your email address <span id="email-address"></span>.
+                        Please open it and click the button inside to confirm your subscription.
+                    </p>
+                    <button>Dismiss message</button>
+                </div>
+
+            <script src="./index.js"></script>    
+
+        </main>
+
+        <footer></footer>
+    </body>
+
+</html>
